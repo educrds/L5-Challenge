@@ -1,2 +1,38 @@
+<!-- <p-button icon="pi pi-search" (click)="onSearch()"></p-button> -->
 
-<p-button icon="pi pi-search" (click)="teste()"></p-button>
+<div class="default-container g-24" *ngIf="artistsResult.length > 0">
+  <!-- <div *ngFor="let artist of artistsResult">
+    <h3>{{ artist.name }}</h3>
+    <p>{{ artist.listeners | number }}</p>
+    <p>{{ artist.playcount | number }}</p>
+  </div> -->
+
+  <div class="card">
+    <p-carousel
+      [value]="artistsResult"
+      [numVisible]="7"
+      [numScroll]="10"
+      [circular]="false"
+    >
+      <ng-template let-artist pTemplate="item">
+        <div
+          class="border-1 surface-border border-round m-2 text-center py-5 px-3"
+        >
+          <div class="artist-card">
+            <a href="{{ artist.url }}" target="_blank">
+              <p-button
+                label="{{ artist.name }}"
+                styleClass="p-button-success p-button-text"
+              ></p-button>
+            </a>
+
+            <p-tag
+              icon="pi pi-heart-fill"
+              value="{{ artist.listeners | number }}"
+            ></p-tag>
+          </div>
+        </div>
+      </ng-template>
+    </p-carousel>
+  </div>
+</div>

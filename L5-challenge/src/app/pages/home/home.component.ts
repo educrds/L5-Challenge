@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
-
 import { Search } from 'src/app/interfaces/Search';
+import { Artist } from 'src/app/interfaces/Artist';
 
 @Component({
   selector: 'app-home',
@@ -9,11 +9,16 @@ import { Search } from 'src/app/interfaces/Search';
 })
 export class HomeComponent {
   @Input() searchData!: Search;
+  @Input() searchResults!: (Artist[] || Album[]);
 
   // constructor ---> inicializaçao de variaveis e injecao de dependencias
   constructor() {}
 
-  teste(): void {
-    console.log('oi', this.searchData);
+  // ngOnInit() {
+  //   console.log(environment);
+  // }
+
+  onSearch(): void {
+    console.log(this.searchData);
   }
 }

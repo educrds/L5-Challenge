@@ -19,9 +19,18 @@
           [(ngModel)]="search.searchType"
           optionLabel="text"
         ></p-dropdown>
-        <!-- <p-button icon="pi pi-search" (click)="teste()"></p-button> -->
-        <app-home [searchData]="search"></app-home>
+        <p-button icon="pi pi-search" (click)="searchByArtist()"></p-button>
       </div>
+      
+      <app-home [searchData]="search" [searchResults]="searchResults"></app-home>
+      
+      <!-- <div class="default-container g-24">
+        <div *ngFor="let artist of topWorldArtists">
+          <h3>{{ artist.name }}</h3>
+          <p>{{ artist.listeners | number }}</p>
+          <p>{{ artist.playcount | number }}</p>
+        </div>
+      </div> -->
     </div>
   </p-tabPanel>
   <p-tabPanel header="Header II">
@@ -52,7 +61,7 @@
             <td>
               <div
                 class="pi pi-trash"
-                style="color: var(--red-700); font-weight: 700;"
+                style="color: var(--red-700); font-weight: 700"
               ></div>
             </td>
           </tr>

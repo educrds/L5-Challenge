@@ -2,13 +2,39 @@
 @import "../node_modules/primeng/resources/primeng.min.css";
 @import "../node_modules/primeng/resources/themes/my-theme/theme.css";
 
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
 body {
   padding: 16px;
   margin: 0;
+}
+.card {
+  width: 100%;
+}
+.artist-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
 }
 .d-flex {
   display: flex;
 }
 .g-8 {
   gap: 8px;
+}
+.g-16 {
+  gap: 16px;
+}
+.g-24 {
+  gap: 24px;
+}
+.default-container {
+  background: #1d1d1d;
+  border-radius: 8px;
+  padding: 12px;
+  display: flex;
 }
