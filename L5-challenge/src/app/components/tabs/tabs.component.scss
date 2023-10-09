@@ -1,0 +1,11 @@
+:host ::ng-deep .p-tabview .p-tabview-nav {
+  li .p-tabview-nav-link {
+    gap: 0.5rem;
+  }
+  li.p-highlight {
+    .p-tabview-nav-link {
+      background: var(--primary-color);
+      color: var(--text-color);
+    }
+  }
+}
