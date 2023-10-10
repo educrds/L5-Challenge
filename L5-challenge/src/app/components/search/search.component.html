@@ -1,0 +1,29 @@
+<div class="d-flex f-column g-8">
+  <div class="d-flex g-8">
+    <div class="d-flex g-4 f-column">
+      <label for="search">Pesquisa:</label>
+      <input
+        type="text"
+        class="mr-2"
+        pInputText
+        name="search"
+        [(ngModel)]="search.search"
+        placeholder="Pesquise aqui..."
+      />
+    </div>
+    <div class="d-flex g-4 f-column">
+      <label for="searchType">Pesquisa por:</label>
+      <p-dropdown
+        [options]="searchType"
+        [(ngModel)]="search.searchType"
+        optionLabel="text"
+      ></p-dropdown>
+    </div>
+    <div class="align-end">
+      <p-button icon="pi pi-search" (click)="verifySearchType()"></p-button>
+    </div>
+  </div>
+  
+  <app-home [searchData]="search" [searchResults]="searchResults"></app-home>
+
+</div>
