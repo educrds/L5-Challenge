@@ -1,0 +1,11 @@
+:host ::ng-deep.p-paginator {
+  .p-paginator-pages {
+    .p-paginator-page {
+      color: #fff;
+      &.p-highlight {
+        background-color: var(--primary-color);
+        border-color: var(--primary-color);
+      }
+    }
+  }
+}
