@@ -1,27 +1,96 @@
-# L5Challenge
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a>
+    <img src="https://static-00.iconduck.com/assets.00/apple-music-icon-2046x2048-yj5m1ad4.png" alt="Logo" width="80" height="80">
+  </a>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.5.
+  <h3 align="center">L5 Challenge</h3>
 
-## Development server
+  <p align="center">
+    Artist and Album Search
+    <br />
+    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
+    <br />
+  </p>
+</div>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+<!-- ABOUT THE PROJECT -->
+## Sobre o Projeto
 
-## Code scaffolding
+O L5 Music é um projeto incrível que reúne uma grande variedade de álbuns, artistas e músicas para os amantes da música explorarem. Ele permite que os usuários descubram novas músicas de forma fácil e divertida, oferecendo uma busca precisa para encontrar artistas e álbuns específicos.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Além disso, o projeto acompanha o gosto dos usuários, salvando suas pesquisas. Isso significa que você pode personalizar suas descobertas musicais com base no que gosta, tornando a experiência de ouvir música ainda mais pessoal e emocionante.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+### Construído com
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+* [![Angular][Angular.io]][Angular-url]
+* [PrimeNg.dev]
 
-## Running end-to-end tests
+<p align="right">(<a href="#readme-top">Voltar ao topo</a>)</p>
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+<!-- GETTING STARTED -->
+## Iniciando
+
+Para aproveitar ao máximo a aplicação, é fundamental seguir alguns passos simples.
+
+### Instalação
+
+Devem ser seguidos os seguintes passos:
+
+1. Clone o repositório
+   ```sh
+   git clone https://github.com/educrds/L5-Challenge
+   ```
+2. Instale os pacotes do NPM
+   ```sh
+   npm install
+   ```
+3. Rode o projeto utilizando o comando abaixo
+   ```js
+   ng serve
+   ```
+
+<p align="right">(<a href="#readme-top">Voltar ao topo</a>)</p>
+
+
+<!-- ROADMAP -->
+## Roadmap
+
+- [x] Add Changelog
+- [x] Add back to top links
+- [ ] Add Additional Templates w/ Examples
+- [ ] Add "components" document to easily copy & paste sections of the readme
+- [ ] Multi-language Support
+    - [ ] Chinese
+    - [ ] Spanish
+
+See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGMENTS -->
+## Acknowledgments
+
+Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
+
+* [Choose an Open Source License](https://choosealicense.com)
+* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
+* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
+* [Malven's Grid Cheatsheet](https://grid.malven.co/)
+* [Img Shields](https://shields.io)
+* [GitHub Pages](https://pages.github.com)
+* [Font Awesome](https://fontawesome.com)
+* [React Icons](https://react-icons.github.io/react-icons/search)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+<!-- MARKDOWN LINKS & IMAGES -->
+[Angular.io]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
+[Angular.io]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
+[Angular-url]: https://angular.io/
