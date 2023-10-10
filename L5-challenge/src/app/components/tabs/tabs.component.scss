@@ -6,6 +6,11 @@
     .p-tabview-nav-link {
       background: var(--primary-color);
       color: var(--text-color);
+      border-color: var(--primary-color);
     }
   }
+}
+
+:host ::ng-deep .p-tabview-nav-content {
+  border-bottom: 3px solid var(--primary-color);
 }

@@ -1,6 +1,9 @@
 import { Component, Input } from '@angular/core';
 import { Search } from 'src/app/interfaces/Search';
-import { Artist } from 'src/app/interfaces/Artist';
+import { Artists } from 'src/app/interfaces/Artists';
+import { Albums } from 'src/app/interfaces/Albums';
+import { ListsService } from 'src/app/services/lists.service';
+import { Track } from 'src/app/interfaces/Track';
 
 @Component({
   selector: 'app-home',
@@ -9,16 +12,36 @@ import { Artist } from 'src/app/interfaces/Artist';
 })
 export class HomeComponent {
   @Input() searchData!: Search;
-  @Input() searchResults!: (Artist[] || Album[]);
+  @Input() searchResults!: Artists[] | Albums[];
 
-  // constructor ---> inicializaçao de variaveis e injecao de dependencias
-  constructor() {}
+  topTracks!: Track[];
+  responsiveOptions: any[] | undefined;
 
-  // ngOnInit() {
-  //   console.log(environment);
-  // }
+  constructor(private listsService: ListsService) {}
 
-  onSearch(): void {
-    console.log(this.searchData);
+  ngOnInit() {
+    this.listsService.getTopTracks().subscribe({
+      next: (data) => (this.topTracks = data),
+      error: (error) => console.error(error),
+      complete: () => console.log('Resultados retornados!'),
+    });
+
+    this.responsiveOptions = [
+      {
+        breakpoint: '1400px',
+        numVisible: 7,
+        numScroll: 7,
+      },
+      {
+        breakpoint: '1220px',
+        numVisible: 5,
+        numScroll: 5,
+      },
+      {
+        breakpoint: '900px',
+        numVisible: 2,
+        numScroll: 2,
+      },
+    ];
   }
 }

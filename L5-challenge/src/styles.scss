@@ -11,23 +11,38 @@ body {
   padding: 16px;
   margin: 0;
 }
+a {
+  color: #fff;
+}
 .card {
   width: 100%;
 }
-.artist-card {
+.result-card {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 6px;
   align-items: center;
 }
 .d-flex {
   display: flex;
 }
+.f-column {
+  flex-direction: column;
+}
+.align-end {
+  align-self: end;
+}
+.text-center {
+  text-align: center !important;
+}
+.flex-1 {
+  flex: 1;
+}
+.g-4 {
+  gap: 4px;
+}
 .g-8 {
   gap: 8px;
-}
-.g-16 {
-  gap: 16px;
 }
 .g-24 {
   gap: 24px;

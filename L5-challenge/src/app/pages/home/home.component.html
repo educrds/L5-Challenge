@@ -1,34 +1,32 @@
-<!-- <p-button icon="pi pi-search" (click)="onSearch()"></p-button> -->
-
-<div class="default-container g-24" *ngIf="artistsResult.length > 0">
-  <!-- <div *ngFor="let artist of artistsResult">
-    <h3>{{ artist.name }}</h3>
-    <p>{{ artist.listeners | number }}</p>
-    <p>{{ artist.playcount | number }}</p>
-  </div> -->
-
+<div class="default-container g-24" *ngIf="searchResults.length > 0">
   <div class="card">
     <p-carousel
-      [value]="artistsResult"
+      [value]="searchResults"
       [numVisible]="7"
       [numScroll]="10"
+      [responsiveOptions]="responsiveOptions"
       [circular]="false"
     >
-      <ng-template let-artist pTemplate="item">
+      <ng-template let-result pTemplate="item">
         <div
           class="border-1 surface-border border-round m-2 text-center py-5 px-3"
         >
-          <div class="artist-card">
-            <a href="{{ artist.url }}" target="_blank">
+          <div class="result-card">
+            <a href="{{ result.url }}" target="_blank">
               <p-button
-                label="{{ artist.name }}"
+                label="{{ result.name }}"
                 styleClass="p-button-success p-button-text"
               ></p-button>
             </a>
-
             <p-tag
+              *ngIf="result.listeners"
               icon="pi pi-heart-fill"
-              value="{{ artist.listeners | number }}"
+              value="{{ result.listeners | number }}"
+            ></p-tag>
+            <p-tag
+              *ngIf="result.artist"
+              icon="pi pi-user"
+              value="{{ result.artist }}"
             ></p-tag>
           </div>
         </div>
@@ -36,3 +34,44 @@
     </p-carousel>
   </div>
 </div>
+
+<p-card header="Track mais ouvidas">
+  <p-table
+    [value]="topTracks"
+    [paginator]="true"
+    responsiveLayout="stack"
+    [breakpoint]="'960px'"
+    [rows]="10"
+    [tableStyle]="{ 'min-width': '50rem' }"
+    [rowsPerPageOptions]="[10, 25, 50]"
+  >
+    <ng-template pTemplate="header">
+      <tr>
+        <th>Título</th>
+        <th>Ouvintes</th>
+        <th>Duração</th>
+        <th>Artista/Banda</th>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-track>
+      <tr>
+        <td>
+          <a href="{{ track.url }}" target="_blank">{{ track.name }}</a>
+        </td>
+        <td>
+          <p-tag
+            *ngIf="track.listeners"
+            icon="pi pi-heart-fill"
+            value="{{ track.listeners | number }}"
+          ></p-tag>
+        </td>
+        <td>
+          {{
+            track.duration > 0 ? (track.duration * 1000 | date : "mm:ss") : "-"
+          }}
+        </td>
+        <td>{{ track.artist.name }}</td>
+      </tr>
+    </ng-template>
+  </p-table>
+</p-card>
