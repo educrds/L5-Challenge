@@ -21,7 +21,9 @@ O L5 Music é um projeto incrível que reúne uma grande variedade de álbuns, a
 Além disso, o projeto acompanha o gosto dos usuários, salvando suas pesquisas. Isso significa que você pode personalizar suas descobertas musicais com base no que gosta, tornando a experiência de ouvir música ainda mais pessoal e emocionante.
 
 ## Figma do Projeto
-<a href="https://www.figma.com/file/3X7nS6jhNfpkJjRfuXJiq3/Untitled?type=design&node-id=0%3A1&mode=design&t=BoDEIVC1vh39v4Pq-1" target="_blank"><strong>L5 Music Figma</strong></a>
+<a href="https://www.figma.com/file/3X7nS6jhNfpkJjRfuXJiq3/Untitled?type=design&node-id=0%3A1&mode=design&t=BoDEIVC1vh39v4Pq-1" target="_blank"><strong>L5 Music Figma</strong></a> 
+![image](https://github.com/educrds/L5-Challenge/assets/93599890/c5141a2d-2e8b-4182-878b-4135264f35d9)
+![image](https://github.com/educrds/L5-Challenge/assets/93599890/9fb4815c-66c6-4585-8e19-dc53fb443eba)
 
 
 ### Construído com
