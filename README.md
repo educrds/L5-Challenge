@@ -29,7 +29,7 @@ Além disso, o projeto acompanha o gosto dos usuários, salvando suas pesquisas.
 ### Construído com
 
 * [![Angular][Angular.io]][Angular-url]
-* [!https://img.shields.io/badge/PrimeNg-685EA9?style=for-the-badge&logoColor=white]
+* <img src="https://img.shields.io/badge/PrimeNg-685EA9?style=for-the-badge&logoColor=white" alt="Primeng" style="max-width: 100%;">
 
 <!-- GETTING STARTED -->
 ## Iniciando
