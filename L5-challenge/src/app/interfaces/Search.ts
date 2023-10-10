@@ -1,4 +1,4 @@
-import { SearchType } from "./searchType";
+import { SearchType } from "./SearchType";
 
 export interface Search {
   searchType: SearchType,

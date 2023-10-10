@@ -1,6 +1,6 @@
 import { Image } from "./Image";
 
-export interface Artist{
+export interface Artists{
   image: Image;
   listeners: string;
   name: string;
