@@ -18,16 +18,12 @@ export class SearchComponent {
   searchResults: Artists[] | Albums[];
   searchType: SearchType[];
   search: Search;
-  date: Date;
-  isFirstTabActive: boolean;
 
   constructor(
     private searchService: SearchService,
     private searchStorageService: SearchStorageService
   ) {
     this.searchResults = [];
-    this.isFirstTabActive = true;
-    this.date = new Date();
     this.searchType = [
       { id: 1, text: 'Artista' },
       { id: 2, text: 'Álbum' },
@@ -38,7 +34,7 @@ export class SearchComponent {
     };
   }
 
-  // Verifica tipo da pesquisa (1- Artista | 2- Album) e chama função de acordo com tipo
+  // Verifica tipo da pesquisa (1- Artista | 2- Album) e chama função correspondente
   verifySearchType() {
     const searchType: number = this.search.searchType.id;
 

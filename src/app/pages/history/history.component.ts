@@ -18,14 +18,18 @@ export class HistoryComponent {
   }
 
   ngOnInit() {
-    this.searchStorageService.searchHistoryUpdated.subscribe(() => {
-      this.searchHistory = this.searchStorageService.getStoredSearches();
-    });
+    this.searchStorageService.searchHistoryUpdated.subscribe(() =>
+      this.updateSearchHistory()
+    );
+  }
+
+  private updateSearchHistory() {
+    this.searchHistory = this.searchStorageService.getStoredSearches();
   }
 
   // Deleta item do histórico passado por parametro pelo ID
   deleteStoredSearchById(item: SearchHistory) {
     this.searchStorageService.deleteStoredSearchById(item);
-    this.searchHistory = this.searchStorageService.getStoredSearches();
+    this.updateSearchHistory();
   }
 }
