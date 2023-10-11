@@ -1,27 +1,60 @@
-# L5Challenge
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a>
+    <img src="https://static-00.iconduck.com/assets.00/apple-music-icon-2046x2048-yj5m1ad4.png" alt="Logo" width="80" height="80">
+  </a>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.5.
+  <h3 align="center">L5 Challenge</h3>
 
-## Development server
+  <p align="center">
+    Artist and Album Search
+    <br />
+  </p>
+</div>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+<!-- ABOUT THE PROJECT -->
+## Sobre o Projeto
 
-## Code scaffolding
+O L5 Music é um projeto incrível que reúne uma grande variedade de álbuns, artistas e músicas para os amantes da música explorarem. Ele permite que os usuários descubram novas músicas de forma fácil e divertida, oferecendo uma busca precisa para encontrar artistas e álbuns específicos.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Além disso, o projeto acompanha o gosto dos usuários, salvando suas pesquisas. Isso significa que você pode personalizar suas descobertas musicais com base no que gosta, tornando a experiência de ouvir música ainda mais pessoal e emocionante.
 
-## Build
+## Figma do Projeto
+<a href="https://www.figma.com/file/3X7nS6jhNfpkJjRfuXJiq3/Untitled?type=design&node-id=0%3A1&mode=design&t=BoDEIVC1vh39v4Pq-1" target="_blank"><strong>L5 Music Figma</strong></a> 
+![image](https://github.com/educrds/L5-Challenge/assets/93599890/c5141a2d-2e8b-4182-878b-4135264f35d9)
+![image](https://github.com/educrds/L5-Challenge/assets/93599890/9fb4815c-66c6-4585-8e19-dc53fb443eba)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+### Construído com
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+* [![Angular][Angular.io]][Angular-url]
+* <img src="https://img.shields.io/badge/PrimeNg-685EA9?style=for-the-badge&logoColor=white" alt="Primeng" style="max-width: 100%;">
 
-## Running end-to-end tests
+<!-- GETTING STARTED -->
+## Iniciando
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Para aproveitar ao máximo a aplicação, é fundamental seguir alguns passos simples.
 
-## Further help
+### Instalação
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Devem ser seguidos os seguintes passos:
+
+1. Clone o repositório
+   ```sh
+   git clone https://github.com/educrds/L5-Challenge
+   ```
+2. Instale os pacotes do NPM
+   ```sh
+   npm install
+   ```
+3. Rode o projeto utilizando o comando abaixo
+   ```js
+   ng serve
+   ```
+
+
+<!-- MARKDOWN LINKS & IMAGES -->
+[Angular.io]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
+[Angular.io]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
+[Angular-url]: https://angular.io/
